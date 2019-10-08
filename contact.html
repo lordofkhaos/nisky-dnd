@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Contact | Nisky D&D </title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+	
+	<!-- Top Navigation Bar -->
+	<nav class="topbar">
+		<a id="home" href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="resources.html">Resources</a>
+		<a id="selected" href="contact.html">Contact</a>
+	</nav>
+	<br />
+
+	<!-- Main body -->
+	<img src="skyrim-scroll.jpg" />
+	<p>Here is <a href="https://forms.gle/mGQx3qGHHfiwAa1X9">a link</a> to apply to join our discord. This is where most of us talk, outside of real life,
+		so it is the best way to contact us.</p>
+	<p>If you don't want to join our discord or this is a one-time correspondance, please fill out the form below.</p>
+	<!-- The form sends information to my VPS & will post to a webhook on the discord server -->
+	<form action="http://s.lordofkhaos.com:1265/server.php" method="get" id="contact-form">
+		<label for="form-name">Your name:</label>
+		<input name="name" id="form-name" type="text" placeholder="Your name here..." required/>
+
+		<label for="form-content">Content:</label>
+		<input name="content"id="form-content" type="text" placeholder="Some text here..." required/>
+		<input id="form-submit" type="submit"></input>
+	</form>
+
+	<!-- Footer -->
+	<div class="footer">&copy;2019 Niskayuna Dungeons and Dragons</div>
+</body>
+
+</html>

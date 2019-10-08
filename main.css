@@ -1,0 +1,252 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/* Style the background and apply globally font family and color */
+body {
+	background: url("dragon.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: "Titillium Web", Verdana, sans-serif;
+	font-size: 18px;;
+	color: #EEE;
+	padding-bottom: 4em;
+	background-attachment: fixed;
+}
+
+/* Fit all content to the screen */
+html {
+	height: 99%;
+	width: 100%;
+}
+
+/* Put medium gray overlay under image */
+body:before {
+	content: "";
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(81, 81, 81, 0.8);
+	z-index: -1;
+}
+
+/* Align content normally to center */
+div.content {
+	text-align: center;
+}
+
+/* Global NAVBAR Styles */
+nav {
+	padding: 0;
+	margin: 0;
+	word-spacing: -.5em;
+}
+
+nav a,
+nav button {
+	border: none;
+	padding: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	word-spacing: 0em;
+}
+
+/* Top NAVBAR Styles */
+nav.topbar {
+	background-color: #E01B3C;
+}
+
+nav.topbar a {
+	font-size: 18px;
+	color: #EEE;
+}
+
+nav.topbar a:hover {
+	background-color: #C61936;
+	color: #21FF46;
+}
+
+nav.topbar a#home {
+	color: #FF5B13;
+	background-color: #547EE0;
+}
+
+nav.topbar a#home:hover {
+	background-color: #1369FF;
+	color: red;
+}
+
+nav.topbar a#selected {
+	background-color: #FF7618;
+}
+
+nav.topbar a#selected:hover {
+	background-color: #EA6D16;
+	color: #547EE0;
+	text-decoration: none;
+}
+
+/* MINIBAR STYLES */
+nav.minibar {
+	background-color: #224AC3;
+	text-align: left;
+}
+
+nav.minibar button {
+	background-color: #224AC3;
+	color: #2EFF4B;
+	font-size: 16px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+nav.minibar button:hover {
+	background-color: #4A22C3;
+}
+
+nav.minibar button:active,
+nav.minibar button.selected:active {
+	background-color: #AB1E42;
+}
+
+nav.minibar button.selected {
+	background-color: #7722C3;
+}
+
+nav.minibar button.selected:hover {
+	background-color: #C3224B;
+}
+
+/* Normal links */
+a {
+	color: #75F0D2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #7584F0;
+}
+
+/* Make images the right size */
+img {
+	height: 360px;
+	width: 640px;
+}
+
+/* FORM Styles */
+form {
+	display: table;
+}
+
+input[type=text],
+input[type=number] {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+}
+
+input[type=number] {
+	width: 30%;
+	padding: 12px 15px;
+}
+
+input#form-content {
+	height: 8em;
+}
+
+input[type=submit]#form-submit,
+button.roll-button {
+	font-family: "Titillium Web", Verdana, sans-serif;
+	width: 100%;
+	background-color: #3DF5C7;
+	border: none;
+	border-radius: 4px;
+	font-size: 24px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	/* Safari */
+}
+
+input[type=submit]#form-submit:hover,
+button.roll-button {
+	background-color: #00FFBF;
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=submit]#form-submit:active,
+button.roll-button {
+	background-color: #22C39B;
+}
+
+label {
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: .05em;
+}
+
+/* Style the switchables */
+div.switchable {
+	display: none;
+}
+
+
+table.resource-table {
+	border: 2px solid black;
+	width: 100%;
+	background: rgba(81, 81, 81, 0.8);
+	border-spacing: 0;
+}
+
+td.col-0.dice-table {
+	width: 20%;
+}
+
+td,
+th {
+	padding: 5px;
+}
+
+th.col-0,
+th.col-1,
+th.col-2,
+th.col-3 {
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+td.col-0,
+td.col-1,
+td.col-2 {
+	border-right: 1px solid black;
+}
+
+/* Make headers italic */
+h1.title {
+	font-style: italic;
+}
+
+/* Style the footer */
+div.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	height: 2em;
+	padding: 15px 0px 15px 0px;
+	background-color: rgba(81, 81, 81, 1.0);
+}
